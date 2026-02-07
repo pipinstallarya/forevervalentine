@@ -159,22 +159,36 @@ document.addEventListener('DOMContentLoaded', function() {
             `,
             '9': `
                 <div class="chocolate-day-content">
-                    <h1 style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: #8b4513; text-align: center; margin-bottom: 20px;">🍫 Chocolate Day 🍫</h1>
+                    <h1 style="font-family: 'Dancing Script', cursive; font-size: 3rem; color: #8b4513; text-align: center; margin-bottom: 20px;">🍫 Chocolate Day & � Birthday 🎂</h1>
                     <div style="position: relative; height: 300px; margin: 30px 0; overflow: hidden; border-radius: 15px; background: linear-gradient(135deg, #8b4513, #d2691e);">
                         <div id="chocolateContainer"></div>
                     </div>
+                    
+                    <div style="position: relative; height: 400px; margin: 30px 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ffeaa7, #fab1a0); border-radius: 15px; overflow: hidden;">
+                        <div class="sketchfab-embed-wrapper"> 
+                            <iframe title="Chocolate Strawberry Drip Cake" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/adb6c3cccbb94c54bfd84f9904e15c97/embed" style="width: 100%; height: 100%; border: none;"> 
+                            </iframe> 
+                        </div>
+                    </div>
+                    
                     <div style="text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.8); border-radius: 15px; margin: 20px 0;">
-                        <h2 style="color: #8b4513; margin-bottom: 15px;">My Sweet Devi,</h2>
+                        <h2 style="color: #8b4513; margin-bottom: 15px;">My Sweet Birthday Girl, Devi! 🎂💕</h2>
                         <p style="font-size: 1.1rem; line-height: 1.8; color: #2d3436; margin-bottom: 15px;">
-                            Life with you is like the finest chocolate - rich, sweet, and utterly addictive. 
-                            Each day with you adds a new layer of flavor to my life's journey.
+                            Today is extra special because it's not just Chocolate Day - it's YOUR birthday! 
+                            The universe gave us the sweetest person on the sweetest day of Valentine's Week. 
+                            What a perfect combination!
                         </p>
                         <p style="font-size: 1.1rem; line-height: 1.8; color: #2d3436; margin-bottom: 15px;">
-                            On this Chocolate Day, I want to remind you that you are the sweetest thing that has ever happened to me. 
+                            On this Chocolate Day and your birthday, I want you to know that you are the sweetest 
+                            thing in my life - sweeter than any chocolate, more precious than any gift. 
                             Your love melts away all my worries and fills my heart with warmth and joy.
                         </p>
-                        <p style="font-size: 1.2rem; font-weight: 600; color: #8b4513; margin-top: 20px;">
-                            You're my favorite flavor of love! 🍫💕
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: #2d3436; margin-bottom: 15px;">
+                            Happy Birthday to the love of my life! May your year be as sweet as you are, 
+                            filled with endless joy, beautiful moments, and all the love your heart can hold.
+                        </p>
+                        <p style="font-size: 1.2rem; font-weight: 600; color: #e74c3c; margin-top: 20px;">
+                            Happy Birthday & Chocolate Day, my love! You're my favorite flavor of love! 🎂🍫💕
                         </p>
                     </div>
                 </div>
@@ -304,7 +318,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case '7': // Rose Day - Falling roses
                 createFallingRoses();
                 break;
-            case '9': // Chocolate Day - Falling chocolates
+            case '9': // Chocolate Day & Birthday - Falling chocolates only (3D cake is embedded)
                 createFallingChocolates();
                 break;
         }
