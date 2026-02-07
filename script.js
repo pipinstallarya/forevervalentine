@@ -40,18 +40,22 @@ document.addEventListener('DOMContentLoaded', function() {
         heart.className = 'heart';
         heart.innerHTML = '❤️';
         heart.style.left = Math.random() * 100 + '%';
-        heart.style.animationDelay = Math.random() * 6 + 's';
-        heart.style.fontSize = (Math.random() * 1.5 + 0.5) + 'rem';
+        heart.style.animationDelay = Math.random() * 3 + 's'; // Reduced delay
+        heart.style.fontSize = (Math.random() * 2 + 0.8) + 'rem'; // Slightly larger hearts
+        heart.style.opacity = Math.random() * 0.4 + 0.3; // More variety in opacity
         document.querySelector('.floating-hearts').appendChild(heart);
         
         setTimeout(() => {
             heart.remove();
-        }, 6000);
+        }, 8000); // Slightly longer duration
     }
     
     // Create hearts periodically
-    setInterval(createFloatingHeart, 3000);
-    createFloatingHeart(); // Create initial hearts
+    setInterval(createFloatingHeart, 1500); // Increased frequency
+    // Create initial hearts
+    for (let i = 0; i < 5; i++) {
+        setTimeout(createFloatingHeart, i * 300);
+    }
     
     // Initialize day cards
     function initializeDayCards() {
